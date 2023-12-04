@@ -1,0 +1,44 @@
+/* CSS for the Data component */
+
+.home__data {
+  text-align: center;
+  margin-top: 50px; /* Adjust margin-top as needed */
+}
+
+.home__title {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #333; /* Adjust color */
+}
+
+.home__subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #555; /* Adjust color */
+}
+
+.home__description {
+  font-size: 1.2rem;
+  color: #777; /* Adjust color */
+  margin-bottom: 30px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  background-color: #007bff; /* Adjust background color */
+  color: #fff; /* Adjust text color */
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3; /* Adjust hover background color */
+}
+
+.button--flex {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}

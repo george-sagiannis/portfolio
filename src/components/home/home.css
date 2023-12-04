@@ -1,0 +1,130 @@
+/* Default styles for larger screens */
+.home__container {
+  display: flex;
+  justify-content: center;
+  background: url('../../assets/about.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+
+.home__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  padding: 0 20px;
+  max-width: 1200px;
+  margin: 0 auto; 
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .home__content {
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+  }
+}
+
+.home__social{
+    margin-top: 50px;
+}
+
+
+.home__social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px; 
+  height: 40px;
+  border-radius: 50%; 
+  background-color: #eee; 
+  transition: background-color 0.3s ease;
+  margin-right: 10px;
+}
+
+.uil-instagram {
+  color: #c13584; 
+}
+
+.uil-linkedin {
+  color: #0e76a8; 
+}
+
+.uil-github {
+  color: #333;
+}
+
+.uil-facebook {
+  color: #3b5998;
+}
+
+.home__img {
+  background: url('../../assets/profile.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  box-shadow: inset 0 0 0 9px rgb(255, 255, 255 / 30%);
+  border-radius: 50%;
+  justify-self: center;
+  margin-bottom: 220px;
+}
+
+
+.home__data {
+  margin-top: 50px;
+}
+
+.home__title {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  transition: color 0.3s ease-in-out;
+}
+
+.home__subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #eee;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  transition: color 0.3s ease-in-out;
+}
+
+.home__description {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  transition: color 0.3s ease-in-out;
+}
+
+.home__title:hover {
+  color: #ff1100;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 1rem;
+  background-color: #c300ff; 
+  color: #fff; 
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #a01745;
+}
+
+.button--flex {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}

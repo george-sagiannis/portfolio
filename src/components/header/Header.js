@@ -1,13 +1,12 @@
 import React, { useState} from "react";
+
 import "./header.css";
 
 const Header = () => {
 
 
-    /*============ Toggle Menu ==========*/
-    const[Toggle, showMenu] = useState(false); 
-
-
+  /*============ Toggle Menu ==========*/
+  const[Toggle, showMenu] = useState(false); 
 
   return (
     <header className="header">
