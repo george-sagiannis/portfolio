@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import './home.css';
-import Social from './Social';
-import data from './Data';
+import React, { useState, useEffect } from "react";
+import "./home.css";
+import Social from "./Social";
+import data from "./Data";
 
 const TypingEffect = ({ text }) => {
-  const [displayText, setDisplayText] = useState('');
+  const [displayText, setDisplayText] = useState("");
 
   useEffect(() => {
     let index = 0;
@@ -33,8 +33,8 @@ const Home = () => {
             {data.map((item) => (
               <div className="home__data" key={item.id}>
                 <h1 className="home__title">{item.title}</h1>
-                
-                {item.subtitle === 'Front End Developer' ? (
+
+                {item.subtitle === "Front End Developer" ? (
                   <TypingEffect text={item.subtitle} />
                 ) : (
                   <h3 className="home__subtitle">{item.subtitle}</h3>
