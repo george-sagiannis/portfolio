@@ -8,6 +8,9 @@ import Home from "./components/home/Home";
 
 import Skills from "./components/skills/Skills";
 
+import About from "./components/about/About";
+
+
 const App = () => {
   return (
     <>
@@ -15,10 +18,10 @@ const App = () => {
 
       <main className="main">
         <Home />
+        <About />
         <Skills />
       </main>
     </>
   );
 };
-
 export default App;

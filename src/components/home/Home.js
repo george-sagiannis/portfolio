@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./home.css";
 import Social from "./Social";
-import data from "./Data";
+import { summary } from "../../Data";
 
 const TypingEffect = ({ text }) => {
   const [displayText, setDisplayText] = useState("");
@@ -30,7 +30,7 @@ const Home = () => {
         <div className="home__content grid">
           <div className="home__content--data">
             <Social />
-            {data.map((item) => (
+            {summary.map((item) => (
               <div className="home__data" key={item.id}>
                 <h1 className="home__title">{item.title}</h1>
 
