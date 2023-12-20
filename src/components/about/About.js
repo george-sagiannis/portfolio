@@ -78,7 +78,7 @@ const About = () => {
   return (
     <div className="about">
 
-    <div className="tabs-container">
+    <div className="tabs-container" id="about">
     
         <div className="tabs">
             <button className={selectedTab === 'professionalExperience' ? 'active' : ''} onClick={() => handleTabClick('professionalExperience')}>Professional Experience</button>

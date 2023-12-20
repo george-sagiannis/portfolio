@@ -46,7 +46,7 @@ const SkillBar = ({ name, percentage }) => {
 
 const Skills = () => {
   return (
-    <div className="skills-container">
+    <div className="skills-container" id="skills">
       <div className="skills-heading">
         <h2 className="skills-title">Skills</h2>
       </div>

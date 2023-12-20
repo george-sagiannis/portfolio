@@ -25,8 +25,8 @@ const TypingEffect = ({ text }) => {
 
 const Home = () => {
   return (
-    <section className="home section" id="home">
-      <div className="home__container container grid">
+    <section className="home" id="home">
+      <div className="home__container  grid">
         <div className="home__content grid">
           <div className="home__content--data">
             <Social />

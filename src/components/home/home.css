@@ -81,7 +81,7 @@
 .home__title {
   font-size: 3rem;
   margin-bottom: 10px;
-  color: #fff;
+  color: #4e4040 !important;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   transition: color 0.3s ease-in-out;
 }
@@ -89,7 +89,7 @@
 .home__subtitle {
   font-size: 1.5rem;
   margin-bottom: 20px;
-  color: #eee;
+  color: #4e4040 !important;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
   transition: color 0.3s ease-in-out;
 }
@@ -107,6 +107,9 @@
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
+.home__content--data{
+  margin-left: 10px;
+}
 
 .button {
   display: inline-block;

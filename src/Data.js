@@ -1,3 +1,5 @@
+
+
 const summary = [
   {
     id: 1,
@@ -67,4 +69,12 @@ const seminars = [
   "Web Development (MySQL, PHP, HTML, Dreamweaver CS4) at IEK OMIROS (Duration: 72 hours, March – May 2010)",
 ];
 
-export { summary, professionalExperience, education, certificationsAndLicenses, seminars };
+const projectsData = [
+  { id: 1, category: 'websites', title: 'Green Properties', image: 'image1.png' },
+  { id: 2, category: 'websites', title: 'Lux and Easy', image: 'image2.png' },
+];
+
+
+
+
+export { summary, professionalExperience, education, certificationsAndLicenses, seminars, projectsData };
