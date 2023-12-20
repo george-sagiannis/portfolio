@@ -72,6 +72,13 @@ const seminars = [
 const projectsData = [
   { id: 1, category: 'websites', title: 'Green Properties', image: 'image1.png' },
   { id: 2, category: 'websites', title: 'Lux and Easy', image: 'image2.png' },
+  { id: 3, category: 'websites', title: 'Neon Energy', image: '3.png' },
+  { id: 4, category: 'websites', title: 'Ultra Glass', image: '4.png' },
+  { id: 5, category: 'websites', title: 'Nova Constructions', image: '5.png' },
+  { id: 6, category: 'websites', title: 'Topsmart Investments', image: '6.png' },
+  { id: 7, category: 'websites', title: 'Express Publishing Epiebooks', image: '7.png' },
+  { id: 8, category: 'websites', title: 'Crossfit Kallithea', image: '8.png' },
+  { id: 9, category: 'websites', title: 'Φροντιστήριο Πρίσμα', image: '9.png' },
 ];
 
 

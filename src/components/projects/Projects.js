@@ -4,6 +4,7 @@ import { projectsData } from '../../Data';
 
 const Projects = () => {
   const [selectedCategory, setSelectedCategory] = useState('websites');
+  const [showTitle, setShowTitle] = useState(false); // State to control title visibility
 
   const showCategory = category => {
     setSelectedCategory(category);
@@ -12,6 +13,14 @@ const Projects = () => {
   useEffect(() => {
     setSelectedCategory('all');
   }, []);
+
+  const handleMouseEnter = () => {
+    setShowTitle(true); // Show the title on mouse enter
+  };
+
+  const handleMouseLeave = () => {
+    setShowTitle(false); // Hide the title on mouse leave
+  };
 
   return (
     <div>
@@ -50,9 +59,21 @@ const Projects = () => {
       <section className="portfolio">
         {projectsData.map(project => (
           (selectedCategory === 'all' || project.category === selectedCategory) && (
-            <div className={`project ${project.category}`} key={project.id}>
+            <div
+              className={`project ${project.category}`}
+              key={project.id}
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+            >
               <img src={require(`../../assets/${project.image}`)} alt={project.title} />
-              <h3>{project.title}</h3>
+              {/* Conditional rendering of the title */}
+              {showTitle && (
+                <div className="title-wrapper">
+                  <div className="title-content">
+                    <p className="title__project">{project.title}</p>
+                  </div>
+                </div>
+              )}
             </div>
           )
         ))}
