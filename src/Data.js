@@ -60,25 +60,25 @@ const education = [
 ];
 
 const certificationsAndLicenses = [
-  "React Nanodegree Certificate (09/10/2023)", 
-  "IT Specialist Web Developer (MySQL, PHP, HTML, Dreamweaver CS4) for KeyCERT (06/07/10)",
+  "• React Nanodegree Certificate (09/10/2023)", 
+  "• IT Specialist Web Developer (MySQL, PHP, HTML, Dreamweaver CS4) for KeyCERT (06/07/10)",
 ];
 
 const seminars = [
-  "Whatever has a relationship with Front End Development and Web Development (over 10 courses on Udemy) - Present",
-  "Web Development (MySQL, PHP, HTML, Dreamweaver CS4) at IEK OMIROS (Duration: 72 hours, March – May 2010)",
+  "• Whatever has a relationship with Front End Development and Web Development (over 10 courses on Udemy) - Present",
+  "• Web Development (MySQL, PHP, HTML, Dreamweaver CS4) at IEK OMIROS (Duration: 72 hours, March – May 2010)",
 ];
 
 const projectsData = [
-  { id: 1, category: 'websites', title: 'Green Properties', image: 'image1.png' },
-  { id: 2, category: 'websites', title: 'Lux and Easy', image: 'image2.png' },
-  { id: 3, category: 'websites', title: 'Neon Energy', image: '3.png' },
-  { id: 4, category: 'websites', title: 'Ultra Glass', image: '4.png' },
-  { id: 5, category: 'websites', title: 'Nova Constructions', image: '5.png' },
-  { id: 6, category: 'websites', title: 'Topsmart Investments', image: '6.png' },
-  { id: 7, category: 'websites', title: 'Express Publishing Epiebooks', image: '7.png' },
-  { id: 8, category: 'websites', title: 'Crossfit Kallithea', image: '8.png' },
-  { id: 9, category: 'websites', title: 'Φροντιστήριο Πρίσμα', image: '9.png' },
+  { id: 1, category: 'websites', title: 'Green Properties', image: 'image1.png', url: 'https://greenpropertiesdc.com/' },
+  { id: 2, category: 'websites', title: 'Express Publishing Epiebooks', image: '7.png', url:'https://www.epiebooks.com/' },
+  { id: 3, category: 'websites', title: 'Lux and Easy', image: 'image2.png', url:'https://luxandeasy.com/' },
+  { id: 4, category: 'websites', title: 'Neon Energy', image: '3.png', url:'https://us.neon-energy.com/' },
+  { id: 5, category: 'websites', title: 'Ultra Glass', image: '4.png',url: 'https://ultra-glass.com/' },
+  { id: 6, category: 'websites', title: 'Nova Constructions', image: '5.png', url: 'https://novaconstructionssa.com/' },
+  { id: 7, category: 'websites', title: 'Topsmart Investments', image: '6.png', url: 'https://topsmartinv.com/?lang=en' },
+  { id: 8, category: 'websites', title: 'Crossfit Kallithea', image: '8.png', url:'https://www.crossfitkallithea.gr/' },
+  { id: 9, category: 'websites', title: 'Φροντιστήριο Πρίσμα', image: '9.png', url:'https://www.prismafme.gr/' },
 ];
 
 

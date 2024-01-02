@@ -80,6 +80,16 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+
+@media (max-width: 658px) {
+  .tabs {
+    flex-direction: column;
+    align-items: center; 
+    width: 450px;
+  }
+}
+
+
 .tabs button {
   margin: 0 5px; 
 }

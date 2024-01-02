@@ -1,26 +1,27 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './projects.css';
 import { projectsData } from '../../Data';
 
 const Projects = () => {
   const [selectedCategory, setSelectedCategory] = useState('websites');
-  const [showTitle, setShowTitle] = useState(false); // State to control title visibility
+  const [hoveredProject, setHoveredProject] = useState(null); // State to track hovered project
 
   const showCategory = category => {
     setSelectedCategory(category);
   };
 
-  useEffect(() => {
-    setSelectedCategory('all');
-  }, []);
-
-  const handleMouseEnter = () => {
-    setShowTitle(true); // Show the title on mouse enter
+  const handleMouseEnter = projectId => {
+    setHoveredProject(projectId);
   };
 
   const handleMouseLeave = () => {
-    setShowTitle(false); // Hide the title on mouse leave
+    setHoveredProject(null); // Reset the hovered project when mouse leaves
   };
+
+  const handleProjectClick = (url) => {
+    window.open(url, '_blank');
+  };
+
 
   return (
     <div>
@@ -56,18 +57,19 @@ const Projects = () => {
         </nav>
       </header>
 
-      <section className="portfolio">
+     <section className="portfolio">
         {projectsData.map(project => (
           (selectedCategory === 'all' || project.category === selectedCategory) && (
             <div
               className={`project ${project.category}`}
               key={project.id}
-              onMouseEnter={handleMouseEnter}
+              onMouseEnter={() => handleMouseEnter(project.id)}
               onMouseLeave={handleMouseLeave}
+              onClick={() => handleProjectClick(project.url)} // Handle project click
             >
               <img src={require(`../../assets/${project.image}`)} alt={project.title} />
               {/* Conditional rendering of the title */}
-              {showTitle && (
+              {(hoveredProject === project.id) && (
                 <div className="title-wrapper">
                   <div className="title-content">
                     <p className="title__project">{project.title}</p>
