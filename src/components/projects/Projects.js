@@ -24,7 +24,7 @@ const Projects = () => {
 
 
   return (
-    <div>
+    <div className="projects-container" id="projects">
       <header className="portfolio-header">
         <h1 className="portfolio-title">My Portfolio</h1>
         <nav className="portfolio-nav">

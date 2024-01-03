@@ -1,0 +1,50 @@
+.contact-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.contact-container .home__social {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.contact-container .home__social-icon {
+  margin: 0 10px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+  .contact-container .home__social {
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+  }
+
+  .contact-container .home__social-icon {
+    margin: 10px;
+  }
+}
+
+.social-header {
+  font-size: 24px;
+  color: #333;
+  animation-name: slideIn;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.contact-container .social-header span {
+  display: inline-block;
+  transition: transform 0.3s ease-in-out;
+}
