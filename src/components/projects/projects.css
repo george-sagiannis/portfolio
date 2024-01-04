@@ -5,8 +5,8 @@
 
 .project {
   flex: 0 0 calc(30% - 40px);
-  margin: 20px;
-  padding: 10px;
+  margin-bottom: 10px;
+  padding: 3px;
   background-color: white;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   text-align: center; 

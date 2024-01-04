@@ -71,14 +71,14 @@ const seminars = [
 
 const projectsData = [
   { id: 1, category: 'websites', title: 'Green Properties', image: 'image1.png', url: 'https://greenpropertiesdc.com/' },
-  { id: 2, category: 'websites', title: 'Express Publishing Epiebooks', image: '7.png', url:'https://www.epiebooks.com/' },
+  { id: 2, category: 'websites', title: 'Express Publishing Epiebooks', image: 'image7.png', url:'https://www.epiebooks.com/' },
   { id: 3, category: 'websites', title: 'Lux and Easy', image: 'image2.png', url:'https://luxandeasy.com/' },
-  { id: 4, category: 'websites', title: 'Neon Energy', image: '3.png', url:'https://us.neon-energy.com/' },
-  { id: 5, category: 'websites', title: 'Ultra Glass', image: '4.png',url: 'https://ultra-glass.com/' },
-  { id: 6, category: 'websites', title: 'Nova Constructions', image: '5.png', url: 'https://novaconstructionssa.com/' },
-  { id: 7, category: 'websites', title: 'Topsmart Investments', image: '6.png', url: 'https://topsmartinv.com/?lang=en' },
-  { id: 8, category: 'websites', title: 'Crossfit Kallithea', image: '8.png', url:'https://www.crossfitkallithea.gr/' },
-  { id: 9, category: 'websites', title: 'Φροντιστήριο Πρίσμα', image: '9.png', url:'https://www.prismafme.gr/' },
+  { id: 4, category: 'websites', title: 'Neon Energy', image: 'image3.png', url:'https://us.neon-energy.com/' },
+  { id: 5, category: 'websites', title: 'Ultra Glass', image: 'image4.png',url: 'https://ultra-glass.com/' },
+  { id: 6, category: 'websites', title: 'Nova Constructions', image: 'image5.png', url: 'https://novaconstructionssa.com/' },
+  { id: 7, category: 'websites', title: 'Topsmart Investments', image: 'image6.png', url: 'https://topsmartinv.com/?lang=en' },
+  { id: 8, category: 'websites', title: 'Crossfit Kallithea', image: 'image8.png', url:'https://www.crossfitkallithea.gr/' },
+  { id: 9, category: 'websites', title: 'Φροντιστήριο Πρίσμα', image: 'image9.png', url:'https://www.prismafme.gr/' },
 ];
 
 

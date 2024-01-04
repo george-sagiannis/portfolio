@@ -1,14 +1,55 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./header.css";
 
 const Header = () => {
-  const [toggle, setToggle] = useState(false);
   const [activeLink, setActiveLink] = useState("home");
+  const [toggle, setToggle] = useState(false); // Define the toggle state
+  const sectionRefs = useRef({}); // Ref to store section references
 
   const handleLinkClick = (link) => {
     setActiveLink(link);
     setToggle(false);
+    // Scroll to the selected section
+    sectionRefs.current[link].scrollIntoView({ behavior: "smooth" });
   };
+
+  useEffect(() => {
+    const sectionIds = ["home", "about", "skills", "projects", "contact"];
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveLink(entry.target.id);
+            // Update the URL hash when scrolling to a new section
+            window.history.replaceState(null, null, `#${entry.target.id}`);
+          }
+        });
+      },
+      {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.5,
+      }
+    );
+
+    sectionIds.forEach((id) => {
+      const section = document.getElementById(id);
+      if (section) {
+        observer.observe(section);
+        sectionRefs.current[id] = section; // Store section references
+      }
+    });
+
+    return () => {
+      sectionIds.forEach((id) => {
+        const section = document.getElementById(id);
+        if (section) {
+          observer.unobserve(section);
+        }
+      });
+    };
+  }, []);
 
   return (
     <header className="header">
