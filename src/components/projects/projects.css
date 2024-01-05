@@ -1,5 +1,6 @@
 .projects-container{
   background-color: #f5f5f5;
+  margin: 30px;
 }
 
 
@@ -10,20 +11,16 @@
   background-color: white;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   text-align: center; 
-  position: relative; 
+
 }
 
-@media (max-width: 1182px) {
-  .project {
-    flex-basis: calc(48% - 40px); 
-  }
-}
 
 @media (max-width: 768px) {
   .project {
-    flex-basis: calc(96% - 40px); 
+    flex-basis: calc(46% - 40px); 
   }
 }
+
 
 .project img {
   max-width: 100%;
@@ -143,16 +140,18 @@
 
 .title-content {
   position: absolute;
-  top: -150px;
-  left: 50%;
-  transform: translate(-50%, -90%);
+  top: -50%; /* Position from the middle vertically */
+  left: 50%; /* Position from the middle horizontally */
+  transform: translate(-50%, -100%); /* Center the element */
   background-color: #333;
   padding: 10px;
   color: white;
   border-radius: 10px;
   max-width: 300px;
   word-wrap: break-word;
+  text-align: center; /* Center text content horizontally */
 }
+
 
 .title-content:hover {
   color: rgb(216, 180, 180);

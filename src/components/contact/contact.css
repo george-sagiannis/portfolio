@@ -26,7 +26,7 @@
 }
 
 .social-header {
-  font-size: 12px;
+  font-size: 32px;
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
@@ -43,13 +43,13 @@
     text-shadow: 3px 3px 0 var(--color-secondary);
   }
   20% {
-    text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary);
+    text-shadow: 3px 3px 0 var(--color-secondary), 2px 2px 0 var(--color-tertiary);
   }
   30% {
-    text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+    text-shadow: 3px 3px 0 var(--color-secondary), 2px 2px 0 var(--color-tertiary), 3px 3px var(--color-quaternary);
   }
   40% {
-    text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
+    text-shadow: 3px 3px 0 var(--color-secondary), 2px 2px 0 var(--color-tertiary), 3px 3px var(--color-quaternary), 6px 6px 0 var(--color-quinary);
   }
 }
 
@@ -72,6 +72,19 @@
     transform: translateY(0);
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .social-header {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .social-header {
+    font-size: 10px;
+  }
+}
+
 
 .contact-container .social-header span {
   display: inline-block;

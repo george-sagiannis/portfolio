@@ -83,8 +83,8 @@ const projectsData = [
   { id: 11, category: 'apps', title: 'MyReads: A Book Tracking App with React + Prototypes', image: 'image11.png', url:'https://github.com/george-sagiannis/myreads_project/' },
   { id: 12, category: 'apps', title: 'Employee Polls Web App with React + Redux', image: 'image11.png', url:'https://github.com/george-sagiannis/employeepollswebapp/' },
   { id: 13, category: 'apps', title: 'Twitter clone with React + Redux', image: 'image11.png', url:'https://github.com/george-sagiannis/twitterclone/' },
-  { id: 14, category: 'apps', title: 'Customer Care Web App for Deddie (Hellenic Electricity Distribution Network Operator S.A. (HEDNO, Greece))', image: 'image11.png', url:'https://apps.deddie.gr/' },
-  { id: 15, category: 'apps', title: 'Customer Care Back Office App for Deddie (Hellenic Electricity Distribution Network Operator S.A. (HEDNO, Greece))', image: 'image11.png', url:'#' },
+  { id: 14, category: 'apps', title: 'Customer Care Web App for Deddie', image: 'image11.png', url:'https://apps.deddie.gr/' },
+  { id: 15, category: 'apps', title: 'Customer Care Back Office App', image: 'image11.png', url:'#' },
 
 ];
 
