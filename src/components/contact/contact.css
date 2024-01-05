@@ -26,11 +26,41 @@
 }
 
 .social-header {
-  font-size: 24px;
-  color: #333;
-  animation-name: slideIn;
-  animation-duration: 1s;
-  animation-timing-function: ease-in-out;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  letter-spacing: 0.4rem;
+  animation: shadows 1.2s ease-in infinite, move 1.2s ease-in infinite;
+}
+
+@keyframes shadows {
+  0%, 100% {
+    text-shadow: none;
+  }
+  10% {
+    text-shadow: 3px 3px 0 var(--color-secondary);
+  }
+  20% {
+    text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary);
+  }
+  30% {
+    text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+  }
+  40% {
+    text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
+  }
+  /* Remaining keyframes as per your original code */
+}
+
+@keyframes move {
+  0%, 100% {
+    transform: translate(0px, 0px);
+  }
+  40% {
+    transform: translate(-12px, -12px);
+  }
 }
 
 @keyframes slideIn {

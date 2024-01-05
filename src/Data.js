@@ -5,7 +5,7 @@ const summary = [
     id: 1,
     title: 'George Sagiannis',
     subtitle: 'Front End Developer',
-    description: `Experienced Front End Developer with 10 years of experience building and maintaining responsive websites and applications using HTML, CSS, and JavaScript, possessing a Bachelor's Degree in Applied Informatics in Management & Finance from the Higher Technological Educational Institute of Messolonghi, I'm passionate about enhancing skills in the React.js and have successfully completed two projects as part of the Udacity React Nanodegree.`,
+    description: `Experienced Front End Developer with 10 years of experience building and maintaining responsive websites and applications using HTML, CSS, and JavaScript, possessing a Bachelor's Degree in Applied Informatics in Management & Finance from the Higher Technological Educational Institute of Messolonghi, I'm passionate about enhancing skills in the React.js.`,
     buttonLabel: 'CV'
   }
 ];
@@ -79,6 +79,13 @@ const projectsData = [
   { id: 7, category: 'websites', title: 'Topsmart Investments', image: 'image6.png', url: 'https://topsmartinv.com/?lang=en' },
   { id: 8, category: 'websites', title: 'Crossfit Kallithea', image: 'image8.png', url:'https://www.crossfitkallithea.gr/' },
   { id: 9, category: 'websites', title: 'Φροντιστήριο Πρίσμα', image: 'image9.png', url:'https://www.prismafme.gr/' },
+  { id: 10, category: 'apps', title: 'I have built over 70 Digibooks', image: 'image10.png', url:'https://www.google.com/search?sca_esv=595887569&rlz=1C1GCEA_enGR1034GR1034&sxsrf=AM9HkKmrUozrK-nGMnIRtiPweBYCaP6xCQ:1704437868853&q=express+publishing+digibooks&tbm=isch&source=lnms&sa=X&ved=2ahUKEwjjstvt1cWDAxVag_0HHT7OC1MQ0pQJegQIExAB&biw=1536&bih=738&dpr=1.25/' },
+  { id: 11, category: 'apps', title: 'MyReads: A Book Tracking App with React + Prototypes', image: 'image11.png', url:'https://github.com/george-sagiannis/myreads_project/' },
+  { id: 12, category: 'apps', title: 'Employee Polls Web App with React + Redux', image: 'image11.png', url:'https://github.com/george-sagiannis/employeepollswebapp/' },
+  { id: 13, category: 'apps', title: 'Twitter clone with React + Redux', image: 'image11.png', url:'https://github.com/george-sagiannis/twitterclone/' },
+  { id: 14, category: 'apps', title: 'Customer Care Web App for Deddie (Hellenic Electricity Distribution Network Operator S.A. (HEDNO, Greece))', image: 'image11.png', url:'https://apps.deddie.gr/' },
+  { id: 15, category: 'apps', title: 'Customer Care Back Office App for Deddie (Hellenic Electricity Distribution Network Operator S.A. (HEDNO, Greece))', image: 'image11.png', url:'#' },
+
 ];
 
 

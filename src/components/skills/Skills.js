@@ -57,6 +57,7 @@ const Skills = () => {
           <SkillBar name="CSS3" percentage={90} />
           <SkillBar name="jQuery" percentage={85} />
           <SkillBar name="Bootstrap" percentage={80} />
+          <SkillBar name="React.js" percentage={70} />
         </div>
         <div className="skills-column">
           <SkillBar name="SASS" percentage={80} />
@@ -64,6 +65,7 @@ const Skills = () => {
           <SkillBar name="GIT" percentage={80} />
           <SkillBar name="Wordpress" percentage={80} />
           <SkillBar name="Tailwind" percentage={60} />
+          <SkillBar name="Redux" percentage={70} />
         </div>
       </div>
     </div>

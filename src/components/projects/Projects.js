@@ -27,6 +27,7 @@ const Projects = () => {
     <div className="projects-container" id="projects">
       <header className="portfolio-header">
         <h1 className="portfolio-title">My Portfolio</h1>
+        <h2 className="portfolio-subtitle">Below are some key Projects I have built in my career</h2>
         <nav className="portfolio-nav">
           <ul className="portfolio-nav-list">
             <li>
