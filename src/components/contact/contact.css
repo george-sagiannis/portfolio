@@ -32,7 +32,7 @@
   text-align: center;
   margin: 0;
   letter-spacing: 0.4rem;
-  animation: shadows 1.2s ease-in infinite, move 1.2s ease-in infinite;
+  animation: shadows 3.2s ease-in infinite, move 7.2s ease-in infinite;
 }
 
 @keyframes shadows {
@@ -51,7 +51,6 @@
   40% {
     text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
   }
-  /* Remaining keyframes as per your original code */
 }
 
 @keyframes move {
@@ -59,7 +58,7 @@
     transform: translate(0px, 0px);
   }
   40% {
-    transform: translate(-12px, -12px);
+    transform: translate(-42px, -12px);
   }
 }
 
