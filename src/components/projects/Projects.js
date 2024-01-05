@@ -19,7 +19,9 @@ const Projects = () => {
   };
 
   const handleProjectClick = (url) => {
-    window.open(url, '_blank');
+    if (url !== '#' && url !== undefined) { // Check if the URL is not '#' or undefined
+      window.open(url, '_blank'); // Open the URL in a new tab if it's not '#' or undefined
+    }
   };
 
 
