@@ -140,16 +140,16 @@
 
 .title-content {
   position: absolute;
-  top: -50%; /* Position from the middle vertically */
-  left: 50%; /* Position from the middle horizontally */
-  transform: translate(-50%, -100%); /* Center the element */
+  top: -50%; 
+  left: 50%; 
+  transform: translate(-50%, -100%);
   background-color: #333;
   padding: 10px;
   color: white;
   border-radius: 10px;
   max-width: 300px;
   word-wrap: break-word;
-  text-align: center; /* Center text content horizontally */
+  text-align: center;
 }
 
 
