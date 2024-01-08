@@ -1,29 +1,18 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./home.css";
 import Social from "./Social";
 import { summary } from "../../Data";
 
-const TypingEffect = ({ text }) => {
-  const [displayText, setDisplayText] = useState("");
-
-  useEffect(() => {
-    let index = 0;
-    const interval = setInterval(() => {
-      if (index <= text.length) {
-        setDisplayText(text.substring(0, index));
-        index++;
-      } else {
-        clearInterval(interval);
-      }
-    }, 40);
-
-    return () => clearInterval(interval);
-  }, [text]);
-
-  return <h3 className="home__subtitle">{displayText}</h3>;
-};
-
 const Home = () => {
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = process.env.PUBLIC_URL + "/files/GEORGE SAGIANNIS CV.pdf";
+    link.setAttribute("download", "GEORGE SAGIANNIS CV.pdf");
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section className="home" id="home">
       <div className="home__container  grid">
@@ -35,16 +24,16 @@ const Home = () => {
                 <h1 className="home__title">{item.title}</h1>
 
                 {item.subtitle === "Front End Developer" ? (
-                  <TypingEffect text={item.subtitle} />
+                  <h3 className="home__subtitle">{item.subtitle}</h3>
                 ) : (
                   <h3 className="home__subtitle">{item.subtitle}</h3>
                 )}
 
                 <p className="home__description">{item.description}</p>
 
-                <a href="#contact" className="button button--flex">
+                <button onClick={handleDownload} className="button button--flex">
                   {item.buttonLabel}
-                </a>
+                </button>
               </div>
             ))}
           </div>

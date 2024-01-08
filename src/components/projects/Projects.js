@@ -1,29 +1,19 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'; // Import useState from React
 import './projects.css';
 import { projectsData } from '../../Data';
 
 const Projects = () => {
   const [selectedCategory, setSelectedCategory] = useState('websites');
-  const [hoveredProject, setHoveredProject] = useState(null); // State to track hovered project
 
   const showCategory = category => {
     setSelectedCategory(category);
   };
 
-  const handleMouseEnter = projectId => {
-    setHoveredProject(projectId);
-  };
-
-  const handleMouseLeave = () => {
-    setHoveredProject(null); // Reset the hovered project when mouse leaves
-  };
-
   const handleProjectClick = (url) => {
-    if (url !== '#' && url !== undefined) { // Check if the URL is not '#' or undefined
-      window.open(url, '_blank'); // Open the URL in a new tab if it's not '#' or undefined
+    if (url !== '#' && url !== undefined) {
+      window.open(url, '_blank');
     }
   };
-
 
   return (
     <div className="projects-container" id="projects">
@@ -60,25 +50,21 @@ const Projects = () => {
         </nav>
       </header>
 
-     <section className="portfolio">
+      <section className="portfolio">
         {projectsData.map(project => (
           (selectedCategory === 'all' || project.category === selectedCategory) && (
             <div
               className={`project ${project.category}`}
               key={project.id}
-              onMouseEnter={() => handleMouseEnter(project.id)}
-              onMouseLeave={handleMouseLeave}
-              onClick={() => handleProjectClick(project.url)} // Handle project click
+              onClick={() => handleProjectClick(project.url)}
             >
               <img src={require(`../../assets/${project.image}`)} alt={project.title} />
-              {/* Conditional rendering of the title */}
-              {(hoveredProject === project.id) && (
-                <div className="title-wrapper">
-                  <div className="title-content">
-                    <p className="title__project">{project.title}</p>
-                  </div>
+              {/* Display the project title */}
+              <div className="title-wrapper">
+                <div className="title-content">
+                  <p className="title__project">{project.title}</p>
                 </div>
-              )}
+              </div>
             </div>
           )
         ))}

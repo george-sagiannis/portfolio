@@ -82,6 +82,7 @@
 @media screen and (max-width: 767px) {
   .social-header {
     font-size: 10px;
+    animation: shadows 3.2s ease-in infinite; /* Override move animation for smaller devices */
   }
 }
 

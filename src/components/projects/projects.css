@@ -63,7 +63,6 @@
   background-size: 200% auto;
   color: #fff;
   background-clip: text;
-  text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textclip 2s linear infinite;
@@ -123,7 +122,6 @@
 
 .title-wrapper {
   position: relative;
-
 }
 
 .title__project {
@@ -140,7 +138,7 @@
 
 .title-content {
   position: absolute;
-  top: -50%; 
+  top: 0px; 
   left: 50%; 
   transform: translate(-50%, -100%);
   background-color: #333;
@@ -150,6 +148,12 @@
   max-width: 300px;
   word-wrap: break-word;
   text-align: center;
+}
+
+@media (max-width: 767px) {
+  .title__project {
+    font-size: 10px;
+  }
 }
 
 

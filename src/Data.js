@@ -60,7 +60,7 @@ const education = [
 ];
 
 const certificationsAndLicenses = [
-  "• React Nanodegree Certificate (09/10/2023)", 
+  "• React Nanodegree Certificate from Udacity (09/10/2023)",
   "• IT Specialist Web Developer (MySQL, PHP, HTML, Dreamweaver CS4) for KeyCERT (06/07/10)",
 ];
 
